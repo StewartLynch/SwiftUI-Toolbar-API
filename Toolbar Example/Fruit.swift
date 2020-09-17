@@ -19,10 +19,6 @@ struct Fruit: Identifiable {
         Fruit.init(name: "Kiwi", emoji: "🥝"),
         Fruit.init(name: "Banana", emoji: "🍌"),
         Fruit.init(name: "Pear", emoji: "🍐"),
-        Fruit.init(name: "Cherry", emoji: "🍒"),
-        Fruit.init(name: "Strawberry", emoji: "🍓"),
-        Fruit.init(name: "Pineapple", emoji: "🍍"),
-        Fruit.init(name: "Peach", emoji: "🍑"),
-        Fruit.init(name: "Grapes", emoji: "🍇"),
+        Fruit.init(name: "Cherry", emoji: "🍒")
     ]
 }

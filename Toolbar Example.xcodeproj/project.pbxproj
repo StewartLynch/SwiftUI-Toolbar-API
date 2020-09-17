@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2E19FA25132A1000328DBB /* NewFruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E19F925132A1000328DBB /* NewFruitView.swift */; };
 		BB83F4732512E51E00098FD0 /* Toolbar_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83F4722512E51E00098FD0 /* Toolbar_ExampleApp.swift */; };
 		BB83F4752512E51E00098FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83F4742512E51E00098FD0 /* ContentView.swift */; };
 		BB83F4772512E51E00098FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB83F4762512E51E00098FD0 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB2E19F925132A1000328DBB /* NewFruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFruitView.swift; sourceTree = "<group>"; };
 		BB83F46F2512E51E00098FD0 /* Toolbar Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toolbar Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB83F4722512E51E00098FD0 /* Toolbar_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar_ExampleApp.swift; sourceTree = "<group>"; };
 		BB83F4742512E51E00098FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				BB83F4722512E51E00098FD0 /* Toolbar_ExampleApp.swift */,
 				BB83F4742512E51E00098FD0 /* ContentView.swift */,
+				BB2E19F925132A1000328DBB /* NewFruitView.swift */,
 				BB89213D251323A50028F153 /* Fruit.swift */,
 				BB83F4762512E51E00098FD0 /* Assets.xcassets */,
 				BB83F47B2512E51E00098FD0 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2E19FA25132A1000328DBB /* NewFruitView.swift in Sources */,
 				BB89213E251323A50028F153 /* Fruit.swift in Sources */,
 				BB83F4752512E51E00098FD0 /* ContentView.swift in Sources */,
 				BB83F4732512E51E00098FD0 /* Toolbar_ExampleApp.swift in Sources */,
