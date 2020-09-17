@@ -50,7 +50,7 @@ struct ContentView: View {
             }
             .blur(radius: isAdding ? 3 : 0)
             if isAdding {
-                NewFruitView(fruit: $fruitArray, isPresenting: $isAdding)
+                NewFruitView(fruitArray: $fruitArray, isAdding: $isAdding)
                     .zIndex(1.0)
             }
         }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct NewFruitView: View {
-    @Binding var fruit:[Fruit]
-    @Binding var isPresenting: Bool
+    @Binding var fruitArray:[Fruit]
+    @Binding var isAdding: Bool
     @State private var name: String = ""
     @State private var emoji: String = ""
     var body: some View {
@@ -33,14 +33,14 @@ struct NewFruitView: View {
                                 HStack {
                                     Button("Cancel") {
                                         withAnimation {
-                                            isPresenting = false
+                                            isAdding = false
                                         }
                                     }
                                     Spacer()
                                     Button("Add") {
-                                        fruit.append(Fruit.init(name: name, emoji: emoji))
+                                        fruitArray.append(Fruit.init(name: name, emoji: emoji))
                                         withAnimation {
-                                            isPresenting = false
+                                            isAdding = false
                                         }
                                     }.disabled(name.isEmpty || emoji.isEmpty)
                                 }
@@ -52,12 +52,12 @@ struct NewFruitView: View {
                 Spacer()
             }
         }
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct AddFruit_Previews: PreviewProvider {
     static var previews: some View {
-        NewFruitView(fruit: .constant(Fruit.fruit), isPresenting: .constant(true))
+        NewFruitView(fruitArray: .constant(Fruit.fruit), isAdding: .constant(true))
     }
 }
