@@ -14,8 +14,7 @@ struct NewFruitView: View {
     @State private var emoji: String = ""
     var body: some View {
         ZStack {
-            Color.white.opacity(0.2)
-                
+            Color.white.opacity(0.1)
             VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
@@ -43,7 +42,7 @@ struct NewFruitView: View {
                                         withAnimation {
                                             isPresenting = false
                                         }
-                                    }
+                                    }.disabled(name.isEmpty || emoji.isEmpty)
                                 }
                             }
                             .padding()
