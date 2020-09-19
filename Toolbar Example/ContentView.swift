@@ -28,25 +28,55 @@ struct ContentView: View {
                         .font(.title)
                     }
                 }
-                .navigationBarTitle("Fruit")
-                .navigationBarItems(
-                    leading: Button(action: {
-                        ascending.toggle()
-                    }) {
-                        Image(systemName: "arrow.up.arrow.down.square.fill")
-                            .font(.title)
-                            .frame(width: 40, height: 40)
-                    },
-                    trailing: Button(action: {
-                        withAnimation {
-                            isAdding = true
-                        }
-                    }) {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.title)
-                            .frame(width: 40, height: 40)
+                .navigationTitle("Fruit")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Text("Fruit").font(.title).foregroundColor(.red)
+                            Text("Great Nutrition").font(.caption)
+                        }.padding(.bottom,10)
                     }
-                )
+                    ToolbarItem(placement: .bottomBar) {
+                        Button(action: {
+                            ascending.toggle()
+                        }) {
+                            Image(systemName: "arrow.up.arrow.down.square.fill")
+                                .font(.title)
+                                .frame(width: 40, height: 40)
+                        }
+                    }
+                    ToolbarItem(placement: .automatic) {
+                        Button(action: {
+                            withAnimation {
+                                isAdding = true
+                            }
+                        }) {
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title)
+                                .frame(width: 40, height: 40)
+                        }
+                    }
+                }
+//                .navigationBarTitle("Fruit", displayMode: .inline)
+//                .navigationBarItems(
+//                    leading: Button(action: {
+//                        ascending.toggle()
+//                    }) {
+//                        Image(systemName: "arrow.up.arrow.down.square.fill")
+//                            .font(.title)
+//                            .frame(width: 40, height: 40)
+//                    },
+//                    trailing: Button(action: {
+//                        withAnimation {
+//                            isAdding = true
+//                        }
+//                    }) {
+//                        Image(systemName: "plus.circle.fill")
+//                            .font(.title)
+//                            .frame(width: 40, height: 40)
+//                    }
+//                )
             }
             .blur(radius: isAdding ? 3 : 0)
             if isAdding {

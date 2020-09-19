@@ -52,7 +52,8 @@ struct NewFruitView: View {
                 Spacer()
             }
         }
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea()
+//        .edgesIgnoringSafeArea(.all)
     }
 }
 
